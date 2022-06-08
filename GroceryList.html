@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<title>Grocery List</title>
+			<style></style>
+			<link rel = "stylesheet" href = "css.css" />
+			<script src = "groceries.js"></script>
+		</head>
+		
+		<body onload = "initialize();">
+			<div class = "header">
+				<h1>Shop Lift Up, Inc.</h1>
+			</div>
+			<img src = "images/logo.png"/>
+			<hr class = "top"/>
+			<div><h2>Your List</h2></div>
+			<h3>
+				<div class = "list" id = "groceries"></div>
+			</h3>
+			
+			<hr class = "bottom"/>
+			
+			<div id = "userchoices">
+				<button onclick = "userInput('1');">Add Item</button>
+				<button onclick = "userInput('2');">Remove Item</button>
+				<button onclick = "userInput('3');">Move Item</button>
+				<button onclick = "userInput('4');">Change Quantity</button>
+			</div>
+			
+			<div id = "additem" style = "display:none">  
+				<label>
+					Item Name <input type = "textarea" id = "newitem"/>
+				</label>
+				<button onclick = "addItem();">Add Item</button>
+				<button onclick = "cancel('1');">Cancel</button>
+			</div>
+				
+			<div id = "removeitem" style = "display:none">
+				<label>
+					Item Number in the List <input type = "number" min = "1" id = "removenum" value = "1"/>
+				</label>
+				<button onclick = "removeItem();">Remove Item</button>
+				<button onclick = "removeAll();">Remove All</button>
+				<button onclick = "cancel('2');">Cancel</button>
+			</div>
+				
+			<div id = "moveitem" style = "display:none">
+				<label>
+					Move item number <input type = "number" min = "1" id = "itemLoc"/>
+				</label>
+				<button onclick = "moveItem('up');">Up &#8679;</button>
+				<button onclick = "moveItem('down');">Down &#8681;</button>
+				<button onclick = "cancel('3');">Cancel</button>
+			</div>
+
+			<div id = "changequant" style = "display:none;">
+				<label>
+					Change item number <input type = "number" min = "1" id = "itemnum" />
+				</label>
+				<label>
+					by <input type = "number" id = "amount" />
+				</label>
+				<button onclick = "chanQuant();">Change</button>
+				<button onclick = "cancel('4');">Cancel</button>
+			</div>
+		</body>
+	</html>
