@@ -1,0 +1,72 @@
+div
+{
+	text-align:center;
+}
+label
+{
+	text-align:center;
+}
+.highlight
+{
+	background-color:yellow;
+}
+body
+{
+
+	background-color:#add8e6;
+	background-image:url("images/basket.jpg");
+	background-repeat:no-repeat;
+	background-position:center right;
+}
+.list
+{
+	box-shadow:5px 5px 10px 8px black;
+	width:50%;
+	border:medium solid black;
+	border-radius:5px;
+	margin-left:25%;
+	background-position:static;
+	background-color:#e6bbad;
+	background-size:600px;
+}
+hr.bottom
+{
+	width:60%;
+	border:solid 3px #ade6bb;
+}
+hr.top
+{
+	width:100%;
+	border:solid 3px #ade6bb;
+}
+div.header
+{
+	text-align:center;
+	width:73%;
+	display:inline-block;
+}
+img
+{
+	float:left;
+	width:15%;
+}
+h1
+{
+	font:36pt impact;
+	color:maroon;
+}
+h2
+{
+	font:18pt georgia;
+	color:#003366;
+}
+h3
+{
+	font:14pt bookman;
+}
+button
+{
+	background-color:#003366;
+	border-color:#003366;
+	color:#ffffff;
+}
